@@ -1,0 +1,13 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, sans-serif; background: #f8fafc; color: #0f172a; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; }
+summary::-webkit-details-marker { display: none; }
+
+@media (max-width: 640px) {
+  nav div { display: none; }
+  section > div { flex-direction: column !important; }
+  div[style*="min-width: 190"] { min-width: auto !important; text-align: left !important; align-items: flex-start !important; }
+  div[style*="minWidth:190"] { min-width: auto !important; text-align: left !important; align-items: flex-start !important; }
+  div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
